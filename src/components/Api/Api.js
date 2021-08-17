@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import '../App.css';
-import { getList } from './apiFetch';
+import './Api.css';
+import { getList } from '../ApiFetch/ApiFetch';
 function App() {
   const [list, setList] = useState([]);
   useEffect(() => {
@@ -15,15 +15,15 @@ function App() {
   }, [])
   return (
     <div className="wrapper">
-      <h1>My Grocery List</h1>
+      <h2>Electronics</h2>
       <ul>
-        {list.map(item => <li key={item.id}>{item.name}
-        <li>{item.price}</li>
-        <li><img src={item.image} alt={item.name} /></li>
-        <li>{item.description}</li></li>)}
+        {list.map(item => <li key={item.id}><b><i>{item.name}</i></b>
+          <li><img src={item.image} alt={item.name} /></li>
+          <li><b>${item.price}.</b></li>
+          <li><p>{item.description}</p></li></li>)}
       </ul>
     </div>
 
-)
+  )
 }
 export default App;
