@@ -4,7 +4,7 @@ import { getList } from '../ApiFetch/ApiFetch';
 import {StyledWrapper, StyledUnOrderedList} from './ApiStyles';
 
 
-export default function Api() {
+export const Api = () => {
 
   const [list, setList] = useState([]);
   useEffect(() => {

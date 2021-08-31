@@ -6,6 +6,8 @@ export const StyledWrapper = styled.div`
         align-items: center;
         width: fit-content;
         height: min-content;
+        height: '100vh';
+        width:  '100vw';
 `;
 
 
@@ -22,6 +24,7 @@ export const StyledUnOrderedList = styled.ul `
             align-items: center;
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
                        
             
             }
