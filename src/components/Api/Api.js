@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import './Api.css';
+
 import { getList } from '../ApiFetch/ApiFetch';
-function App() {
+import {StyledWrapper, StyledUnOrderedList} from './ApiStyles';
+
+
+export default function Api() {
+
   const [list, setList] = useState([]);
   useEffect(() => {
     let mounted = true;
@@ -13,17 +17,21 @@ function App() {
       })
     return () => mounted = false;
   }, [])
+
+
   return (
-    <div className="wrapper">
+    <StyledWrapper>
       <h2>Electronics</h2>
-      <ul>
-        {list.map(item => <li key={item.id}><b><i>{item.name}</i></b>
-          <li><img src={item.image} alt={item.name} /></li>
-          <li><b>${item.price}.</b></li>
-          <li><p>{item.description}</p></li></li>)}
-      </ul>
-    </div>
+      <p>
+        <StyledUnOrderedList>
+          {list.map(item => <li key={item.id}><b><i>{item.name}</i></b>
+            <li><img src={item.image} alt={item.name} /></li>
+            <li><b>${item.price}.</b></li>
+            <li><p>{item.description}</p></li></li>)}
+        </StyledUnOrderedList>
+      </p>
+    </StyledWrapper>
+    
 
   )
 }
-export default App;

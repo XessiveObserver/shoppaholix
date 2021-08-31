@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Events = () => {
+export const Events = () => {
 return (
 	<div
 	style={{
@@ -15,4 +15,3 @@ return (
 );
 };
 
-export default Events
