@@ -1,5 +1,5 @@
 import { GlobalStyles, Container } from './GlobalStyles';
-import { Routes } from '../Routes/Routes';
+import { Header } from '../Header/Header';
 
 function App() {
 
@@ -7,7 +7,7 @@ function App() {
     return (
         <Container>
             <GlobalStyles />
-            <Routes />
+            <Header />
         </Container>
 
     );

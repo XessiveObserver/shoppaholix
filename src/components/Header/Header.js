@@ -5,7 +5,7 @@ import { Api } from '../Api/Api';
 import { About } from '../Pages/About';
 import { Events } from '../Pages/Events';
 
-export const Routes = () => {
+export const Header = () => {
     return (
         <div>
             <BrowserRouter>
