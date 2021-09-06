@@ -13,16 +13,16 @@ export const NavBar = () => {
         <>
             <Nav>
                 <Bars />
-                
+
                 <NavMenu>
-                <NavLogo>Shoppaholix</NavLogo>
-                    <NavLink to='/' activeStyle>
+                    <NavLogo to='/'>Shoppaholix</NavLogo>
+                    <NavLink to='/' >
                         Home
                     </NavLink>
-                    <NavLink to='/about' activeStyle>
+                    <NavLink to='/about' >
                         About
                     </NavLink>
-                    <NavLink to='/events' activeStyle>
+                    <NavLink to='/events' >
                         Events
                     </NavLink>
                 </NavMenu>

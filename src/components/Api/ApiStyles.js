@@ -12,17 +12,15 @@ export const StyledWrapper = styled.div`
 
 
 
-export const StyledUnOrderedList = styled.ul `
-        display: flex;
+export const StyledUnOrderedList = styled.ul`
         padding: 0;
         margin: 0;
-       
 
         li {
+            
             list-style: none;
             align-items: center;
-            justify-content: space-between;
-                       
+            justify-content: space-between;        
             
             }
         li img {
@@ -32,5 +30,5 @@ export const StyledUnOrderedList = styled.ul `
         }
 
 `;
-   
+
 

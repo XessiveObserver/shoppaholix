@@ -7,6 +7,7 @@ background-color: #c2a184;
 height: 85px;
 display: flex;
 justify-content: space-between;
+align-items: center;
 padding: 0.2rem calc((100vw - 1000px) / 2);
 z-index: 12;
 /* Third Nav */
@@ -15,12 +16,15 @@ z-index: 12;
 
 export const NavLogo = styled.label`
 font-weight: bolder;
+cursor: pointer;
 	
 `;
 
 export const NavLink = styled(Link)`
 color: black;
-display: flex;
+display: grid;
+grid-template-columns: repeat(4, auto);
+grid-gap: 0.2em;
 align-items: center;
 text-decoration: none;
 padding: 0 1rem;
@@ -29,6 +33,10 @@ cursor: pointer;
 font-weight: bolder;
 &.active {
 	color: #185708;
+}
+&:hover {
+	color: #e4d6d6;
+	font-weight: bolder;
 }
 `;
 
@@ -56,7 +64,7 @@ margin-right: -24px;
 /* width: 100vw;
 white-space: nowrap; */
 @media screen and (max-width: 768px) {
-	display: none;
+	display: flex;
 }
 `;
 
