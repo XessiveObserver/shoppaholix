@@ -7,14 +7,13 @@ export const StyledWrapper = styled.div`
         width: fit-content;
         height: min-content;
         height: '100vh';
-        width:  '100vw';
+        width:  auto;
 `;
 
 
 
 export const StyledUnOrderedList = styled.ul `
-        display: inline-flex;
-        background-color: azure;
+        display: flex;
         padding: 0;
         margin: 0;
        
@@ -22,8 +21,6 @@ export const StyledUnOrderedList = styled.ul `
         li {
             list-style: none;
             align-items: center;
-            display: flex;
-            flex-direction: column;
             justify-content: space-between;
                        
             

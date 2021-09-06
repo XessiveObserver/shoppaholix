@@ -4,7 +4,8 @@ import {
     NavLink,
     Bars,
     NavMenu,
-   
+    NavLogo,
+
 } from './NavBarStyles';
 
 export const NavBar = () => {
@@ -12,8 +13,9 @@ export const NavBar = () => {
         <>
             <Nav>
                 <Bars />
-
+                
                 <NavMenu>
+                <NavLogo>Shoppaholix</NavLogo>
                     <NavLink to='/' activeStyle>
                         Home
                     </NavLink>

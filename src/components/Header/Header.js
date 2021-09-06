@@ -10,15 +10,15 @@ export const Header = () => {
         <div>
             <BrowserRouter>
                 <NavBar />
-                <Switch>  
-                    <Route exact path="/">
-                        <Api />
+                <Switch>
+                    <Route exact path="/" >
+                    <Api />
                     </Route>
-                    <Route exact path="/about">
-                        <About />
+                    <Route path="/about" >
+                    <About />
                     </Route>
-                    <Route exact path="/events">
-                        <Events />
+                    <Route path="/events" >
+                    <Events />
                     </Route>
                 </Switch>
             </BrowserRouter>
