@@ -13,15 +13,13 @@ export const StyledWrapper = styled.div`
 
 
 export const StyledUnOrderedList = styled.ul`
-        padding: 0;
-        margin: 0;
-
-        li {
-            
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 1.8em;
+        text-align: center;
+        
+        li {          
             list-style: none;
-            align-items: center;
-            justify-content: space-between;        
-            
             }
         li img {
             width: 200px;

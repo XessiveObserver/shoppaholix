@@ -22,14 +22,16 @@ export const Api = () => {
   return (
     <StyledWrapper>
       <h2>Electronics</h2>
+      <br />
       <p>
         <StyledUnOrderedList>
           {list.map(item => <li key={item.id}><b><i>{item.name}</i></b>
             <li><img src={item.image} alt={item.name} /></li>
             <li><b>${item.price}.</b></li>
-            <li><p>{item.description}</p></li></li>)}
+            </li>)}
         </StyledUnOrderedList>
       </p>
+      <br />
     </StyledWrapper>
     
 
