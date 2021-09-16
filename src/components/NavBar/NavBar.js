@@ -2,7 +2,6 @@ import React from 'react';
 import {
     Nav,
     NavLink,
-    Bars,
     NavMenu,
     NavLogo,
 
@@ -12,8 +11,6 @@ export const NavBar = () => {
     return (
         <>
             <Nav>
-                <Bars />
-
                 <NavMenu>
                     <NavLogo to='/'>Shoppaholix</NavLogo>
                     <NavLink to='/' >

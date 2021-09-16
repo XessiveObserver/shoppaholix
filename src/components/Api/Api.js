@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import { getList } from '../ApiFetch/ApiFetch';
-import {StyledWrapper, StyledUnOrderedList} from './ApiStyles';
+import { StyledWrapper, StyledUnOrderedList, AddCartButton } from './ApiStyles';
 
 
 export const Api = () => {
@@ -21,19 +21,20 @@ export const Api = () => {
 
   return (
     <StyledWrapper>
-      <h2>Electronics</h2>
       <br />
       <p>
         <StyledUnOrderedList>
-          {list.map(item => <li key={item.id}><b><i>{item.name}</i></b>
-            <li><img src={item.image} alt={item.name} /></li>
+          {list.map(item => <li key={item.id}><b>{item.name}</b>
             <li><b>${item.price}.</b></li>
-            </li>)}
+            <li><img src={item.image} alt={item.name} /></li>
+            <AddCartButton>Add To Cart</AddCartButton>
+          </li>
+          )}
         </StyledUnOrderedList>
       </p>
       <br />
     </StyledWrapper>
-    
+
 
   )
 }
