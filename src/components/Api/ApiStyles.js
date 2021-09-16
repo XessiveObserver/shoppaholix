@@ -18,7 +18,7 @@ export const StyledUnOrderedList = styled.ul`
         flex-wrap: wrap;
         gap: 1.8em;
         text-align: center;
-        background-color: #f3e2cc;
+       
         padding: 0.8em;
         margin: 0.8em;
         border-radius:0.85em;
@@ -26,7 +26,17 @@ export const StyledUnOrderedList = styled.ul`
         
         li {          
             list-style: none;
+            padding: 0.5em;
+            margin: 0.5em;
+            border-radius: 0.8em;
+            cursor: pointer;
+            &:hover{
+                background-color:#e6f8f8;
+                transition: all .5s ease;
+                transform: scale(1.06);
             }
+            }
+
         li img {
             width: 200px;
             height: 200px;
@@ -39,11 +49,12 @@ export const StyledUnOrderedList = styled.ul`
 
 export const AddCartButton = styled.button`
     opacity: 0.9;
-    background-color: #975122;
+    background-color: #a5e09dbc;
     font-weight: bolder;
     cursor: pointer;
-    color:white;
-    border-radius: 0.8em;
+    color:black;
+    border-radius: 0.3em;
+    border: 0.1em solid;
     font-size: 0.8em;
     padding: 0.5em;
     margin: 0.5;

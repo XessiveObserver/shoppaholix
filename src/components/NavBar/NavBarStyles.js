@@ -21,7 +21,7 @@ export const NavLogo = styled(Link)`
 	cursor: pointer;
 	margin: 0.8em;
 	padding: 0.8em;
-	margin-right: 5em;
+	margin-right: 0.3em;
 	text-decoration: none;
 	font-size:2.5rem;
 	transition: all .5s ease;

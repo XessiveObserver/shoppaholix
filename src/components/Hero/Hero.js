@@ -36,13 +36,14 @@ const HeroParagraph = styled.p`
 `;
 
 const HeroButton = styled.button`
+    border: 0.18em solid;
     font-weight: bolder;
     cursor: pointer;
     color:black;
-    border-radius: 0.8em;
+    border-radius: 0.3em;
     font-size: 0.8em;
     padding: 0.5em;
-    margin: 0.5;
+    margin: 1em;
     transition: all .5s ease;
     &:hover{
         background-color: #eaeeea;
