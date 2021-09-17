@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { FaBars } from "react-icons/fa";
 
 export const Nav = styled.nav`
-	background-color: #c2a184;
+	background-color: #eee7e0;
 	border-radius:0.8em;
 	opacity: 0.9;
 	height: 85px;

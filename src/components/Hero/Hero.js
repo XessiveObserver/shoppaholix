@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImageSrc from './HeroImage/hero-image.png';
+import HeroImageSrc from './HeroImage/hero-image2.jpg';
 
 const HeroImage = styled.div`
-margin-top: 0.8em;
+    margin-top: 0.8em;
     display: felx;
     flex-direction: column;
     background-image: linear-gradient( to top right,
@@ -16,6 +16,7 @@ margin-top: 0.8em;
     background-size: cover;
     position: relative;
     border-radius: 0.8em;
+    opacity: 0.7;
 `;
 
 const HeroText = styled.div`
@@ -33,6 +34,7 @@ const HeroHeader = styled.h1`
 
 const HeroParagraph = styled.p`
     font-size:1.5em;
+    font-weight: 0.3em;
 `;
 
 const HeroButton = styled.button`

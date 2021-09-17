@@ -31,7 +31,7 @@ export const StyledUnOrderedList = styled.ul`
             border-radius: 0.8em;
             cursor: pointer;
             &:hover{
-                background-color:#e6f8f8;
+                background-color: #eee7e0;;
                 transition: all .5s ease;
                 transform: scale(1.06);
             }
@@ -49,7 +49,7 @@ export const StyledUnOrderedList = styled.ul`
 
 export const AddCartButton = styled.button`
     opacity: 0.9;
-    background-color: #a5e09dbc;
+    background-color: #cfdaceba;
     font-weight: bolder;
     cursor: pointer;
     color:black;

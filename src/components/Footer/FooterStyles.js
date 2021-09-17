@@ -7,7 +7,7 @@ border-radius:0.8em;
 display: flex;
 align-items: center;
 color: #fff;
-background-color: #c2a184;
+background-color: #eee7e0;
 `;
 
 export const FooterContainer = styled(Container)`
