@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+    Bars,
     Nav,
     NavLink,
     NavMenu,
@@ -11,8 +12,11 @@ export const NavBar = () => {
     return (
         <>
             <Nav>
+                <NavLogo to='/'>
+                    Shoppaholix
+                </NavLogo>
+                <Bars />
                 <NavMenu>
-                    <NavLogo to='/'>Shoppaholix</NavLogo>
                     <NavLink to='/' >
                         Home
                     </NavLink>

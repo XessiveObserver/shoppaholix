@@ -32,7 +32,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 20px;
     max-width: 1300px;
     width: 100%;
 

@@ -5,6 +5,7 @@ import { Api } from '../Api/Api';
 import { About } from '../Pages/About';
 import { Events } from '../Pages/Events';
 import { Hero } from '../Hero/Hero';
+import { Footer } from '../Footer/Footer';
 
 function App() {
 
@@ -26,8 +27,9 @@ function App() {
                         <Events />
                     </Route>
                 </Switch>
+                <Footer />
             </BrowserRouter>
-
+            
         </Container>
 
 
