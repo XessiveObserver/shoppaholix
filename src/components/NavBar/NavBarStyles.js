@@ -4,13 +4,12 @@ import { FaBars } from "react-icons/fa";
 
 export const Nav = styled.nav`
 	background-color: #eee7e0;
-	border-radius:0.8em;
 	opacity: 0.9;
 	height: 85px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0.2rem calc((100vw - 1000px) / 2);
+	padding: 0.2rem calc((70vw - 800px) / 2);
 	z-index: 12;
 	/* Third Nav */
 	/* justify-content: flex-start; */
@@ -35,10 +34,10 @@ export const NavLogo = styled(Link)`
 	font-weight: bolder;
 	cursor: pointer;
 	margin: 0.8em;
-	padding: 0.8em;
 	text-decoration: none;
 	font-size:2.5rem;
 	transition: all .5s ease;
+	float:left;
 	&.active {
 		color: #185708;
 	}

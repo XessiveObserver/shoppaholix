@@ -9,6 +9,8 @@ export const StyledWrapper = styled.div`
         height: '100vh';
         width:  auto;
         margin-top: 0.8em;
+        margin: 0;
+        padding: 0 3em;
 `;
 
 

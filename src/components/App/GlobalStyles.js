@@ -31,9 +31,9 @@ body{
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 0;
     padding: 0;
-    max-width: 1300px;
+    max-width: 1000px;
     width: 100%;
 
     @media (max-width: 400px){
@@ -41,11 +41,11 @@ export const Container = styled.div`
     }
 
     @media (max-width:991px) {
-    padding: 0 30px;
+    padding: 0 10px;
     }
 
     @media (min-width: 1500px) {
-        max-width: 1500px;
+        max-width: 1800px;
     }
 
     @media (min-width: 1800px) {

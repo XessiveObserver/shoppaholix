@@ -65,7 +65,7 @@ export const Footer = () => {
 
                         </FooterLinksWrapper>
                     </FooterLinkContainer>
-                    <FooterCopyRight to='https://github.com/xessiveobserver'> &copy; Copyright 2020, Designed and coded with 💛 by Xessive Observer</FooterCopyRight>
+                    <FooterCopyRight to='https://github.com/xessiveobserver'> &copy; Copyright 2021, Designed and coded with 💛 by Xessive Observer</FooterCopyRight>
                 </FooterContainer>
             </FooterSection>
 

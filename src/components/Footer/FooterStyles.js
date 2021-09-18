@@ -3,7 +3,6 @@ import {Container} from '../App/GlobalStyles';
 import {Link} from 'react-router-dom';
 
 export const FooterSection = styled.section`
-border-radius:0.8em;
 display: flex;
 align-items: center;
 color: #fff;

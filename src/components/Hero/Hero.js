@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImageSrc from './HeroImage/hero-image2.jpg';
+import HeroImageSrc from './HeroImage/hero.png';
 
 const HeroImage = styled.div`
-    margin-top: 0.8em;
     display: felx;
     flex-direction: column;
     background-image: linear-gradient( to top right,
@@ -15,8 +14,7 @@ const HeroImage = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    border-radius: 0.8em;
-    opacity: 0.7;
+    
 `;
 
 const HeroText = styled.div`
