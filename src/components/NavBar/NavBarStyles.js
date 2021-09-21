@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FaBars } from "react-icons/fa";
 
 export const Nav = styled.nav`
+	position: sticky; top: 0;
 	background-color: #eee7e0;
 	opacity: 0.9;
 	height: 85px;
@@ -61,6 +62,9 @@ export const NavLink = styled(Link)`
 	transition: all .5s ease;
 	&.active {
 		color: #185708;
+	}
+	&:visited{
+		color:#175853;
 	}
 	&:hover {
 		transform: scale(1.2);

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Properties } from './Properties';
+import { States } from './States';
 
 const EventsWrapper = styled.div`
 	display: flex;
@@ -22,6 +23,7 @@ return (
 			Grow up already
 		</button>
 		</Properties>
+		<States />
 	</EventsWrapper>
 	
 )

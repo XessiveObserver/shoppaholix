@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImageSrc from './HeroImage/hero.png';
+import HeroImageSrc from './HeroImage/hero3.jpg';
 
 const HeroImage = styled.div`
     display: felx;
@@ -9,7 +9,7 @@ const HeroImage = styled.div`
          rgba(11, 10, 10, 0.38),
           rgba(11, 10, 10, 0.19)),
            url(${HeroImageSrc});
-           height: 50vh;
+    height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,7 +23,7 @@ const HeroText = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #1e6d3c;
 `;
 
 const HeroHeader = styled.h1`
