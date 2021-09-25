@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Typewriter from "typewriter-effect";
+import AboutImg from './PageImages/bg-img-about.jpg'
 
 
 const AboutWrapper = styled.div`
@@ -11,42 +12,44 @@ const AboutWrapper = styled.div`
 
 `;
 
-const P1 = styled.p`
+const Heading1 = styled.h1`
 	color: seagreen;
-	margin: 3em;
 `;
 // 
 
 
 
-const AboutHeroImage = styled.div`
+
+const AutoText = styled.div`
 	display: flex;
 	flex-direction: column;
+	font-size: 5em;
+	position: absolute;
+	padding: 10em;
+	text-align:center;
+	align-items: center;
+	font-weight:bold;
+	font-size: 1.5em;
+	color:whitesmoke;
+	text-shadow: 1px 1px 2px black;
+	
+`;
+
+const Image = styled.div`
+	padding: 5em;
+	display: flex;
+	flex-direction: column;
+	background-image: url(${AboutImg});
 	height: 70vh;
 	width: 100vw;
-	background-color: #80c7c7;
 	align-items: center;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-	opacity: 0.6;
+`;
 
-`;
-const AboutHeroParagraph = styled.p`
-	font-size: 5em;
-	position: absolute;
-	margin:1em;
-	padding: 8em;
-	display: flex;
-	flex-direction: column;
-	text-align:center;
-	align-items: center;
-	font-weight:bold;
-	font-size: 1.5em;
-	color:green;
-	text-shadow: 1px 1px 2px black;
-`;
+
 
 
 const AboutMessage = styled.div`
@@ -62,27 +65,23 @@ const AboutMessage = styled.div`
 export const About = () => {
 	return (
 		<AboutWrapper>
-			<P1>your number one source for all things electronic.
-				We're dedicated to providing you the very best of electronics,
-				with an emphasis on customer care,
-				product market fit, custtomer satisfaction.</P1>
-			<AboutHeroImage>
-				<AboutHeroParagraph>
-					<Typewriter
-						onInit={(typewriter) => {
-							typewriter
+			<Heading1>About Us Shoppaholix.</Heading1>
+			<Image />
+			<AutoText>
 
-								.typeString("Welcome to Shoppahlix")
+				<Typewriter
+					options={{
+						strings: ['Welcome to Shoppahlix ...',
+							'Shoppaholix is your number one source for all electronics.'],
+						autoStart: true,
+						loop: true,
+					}}
+				/>
 
-								.pauseFor(1000)
-								.deleteAll()
-								.typeString("Shoppaholix is your number one source for all electronics.")
-								.start();
-						}}
-					/>
-				</AboutHeroParagraph>
-			</AboutHeroImage>
+			</AutoText>
+
 			<AboutMessage>
+
 				Welcome to Shoppahlix,
 				your number one source for all things electronic.
 				We're dedicated to providing you the very best of electronics,

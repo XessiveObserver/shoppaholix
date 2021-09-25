@@ -20,13 +20,14 @@ export const StyledUnOrderedList = styled.ul`
         flex-wrap: wrap;
         gap: 1.8em;
         text-align: center;
-       
+        
         padding: 0.8em;
         margin: 0.8em;
         border-radius:0.85em;
         opacity: 1;
-        
-        li {          
+         
+        li {
+                    
             list-style: none;
             padding: 0.5em;
             margin: 0.5em;
@@ -44,6 +45,7 @@ export const StyledUnOrderedList = styled.ul`
             height: 200px;
             white-space: nowrap;
             border-radius: 0.8em;
+            border: #eee7e0 0.2em solid;
         }
 
 `;
