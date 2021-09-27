@@ -1,4 +1,5 @@
 import React from 'react';
+import { Home, Event } from '@material-ui/icons'
 import {
     Bars,
     Nav,
@@ -18,13 +19,13 @@ export const NavBar = () => {
                 <Bars />
                 <NavMenu>
                     <NavLink to='/' >
-                        Home
+                        <Home /> Home
                     </NavLink>
                     <NavLink to='/about' >
-                        About
+                      About
                     </NavLink>
                     <NavLink to='/events' >
-                        Events
+                    <Event />  Events
                     </NavLink>
                 </NavMenu>
 

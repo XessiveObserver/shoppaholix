@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import { getList } from '../ApiFetch/ApiFetch';
 import { StyledWrapper, StyledUnOrderedList, AddCartButton } from './ApiStyles';
-
+import { AddShoppingCart } from '@material-ui/icons'
 
 export const Api = () => {
 
@@ -27,7 +27,9 @@ export const Api = () => {
           {list.map(item => <li key={item.id}><b>{item.name}</b>
             <li><b>${item.price}.</b></li>
             <li><img src={item.image} alt={item.name} /></li>
-            <AddCartButton>Add To Cart</AddCartButton>
+            <AddCartButton>
+            <AddShoppingCart /> Add To Cart
+            </AddCartButton>
           </li>
           )}
         </StyledUnOrderedList>

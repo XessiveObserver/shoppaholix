@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImageSrc from './HeroImage/hero3.jpg';
+import HeroImageSrc from './HeroImage/hero.jpg';
+import {Shop} from '@material-ui/icons'
 
 const HeroImage = styled.div`
     display: felx;
@@ -23,7 +24,7 @@ const HeroText = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #1e6d3c;
+    color: #f0e2e2;
 `;
 
 const HeroHeader = styled.h1`
@@ -43,7 +44,7 @@ const HeroButton = styled.button`
     border-radius: 0.3em;
     font-size: 0.8em;
     padding: 0.5em;
-    margin: 1em;
+    margin: 0.5em;
     transition: all .5s ease;
     &:hover{
         background-color: #eaeeea;
@@ -59,7 +60,7 @@ export const Hero = () => {
             <HeroText>
                 <HeroHeader>Shoppahloix</HeroHeader>
                 <HeroParagraph>Place Your Order Now</HeroParagraph>
-                <HeroButton>Shop Now</HeroButton>
+                <HeroButton><Shop sx={{padding: 1}}/> Shop Now</HeroButton>
             </HeroText>
         </HeroImage>
     )

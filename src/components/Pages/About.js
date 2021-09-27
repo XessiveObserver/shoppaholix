@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Typewriter from "typewriter-effect";
-import AboutImg from './PageImages/bg-img-about.jpg'
+import AboutImg from './PageImages/desk-gadget.jpg'
 
 
 const AboutWrapper = styled.div`
