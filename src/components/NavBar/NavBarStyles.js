@@ -64,7 +64,7 @@ export const NavLink = styled(Link)`
 		color: #185708;
 	}
 	&:visited{
-		color:#175853;
+		color:blue;
 	}
 	&:hover {
 		transform: scale(1.2);

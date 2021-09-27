@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Typewriter from "typewriter-effect";
 import AboutImg from './PageImages/desk-gadget.jpg'
+import { ExpandMore } from '@material-ui/icons';
+import { Accordion, AccordionSummary, AccordionDetails } from '@material-ui/core';
 
 
 const AboutWrapper = styled.div`
@@ -57,8 +59,6 @@ const AboutMessage = styled.div`
 	justify-content: center;
 	display: flex;
 	flex-direction: column;
-	margin: 3em;
-	padding:3em;
 `;
 
 
@@ -81,23 +81,50 @@ export const About = () => {
 			</AutoText>
 
 			<AboutMessage>
+				<Accordion>
 
-				Welcome to Shoppahlix,
-				your number one source for all things electronic.
-				We're dedicated to providing you the very best of electronics,
-				with an emphasis on customer care,
-				product market fit, custtomer satisfaction.
+					<AccordionSummary expandIcon={<ExpandMore />}>
+						<h3>Welcome to Shoppahlix</h3>
+					</AccordionSummary>
 
-				Founded in 2021 by Xessive Observer,
-				Shoppahlix has come a long way from its beginnings in e-comm era.
-				When Xessive Observer first started out,
-				his passion for Shoppaholix message - was always.
-				"eco-friendly delvivery
-				drove them to start their own business.
+					<AccordionDetails>
+						Your number one source for all things electronic.
+						We're dedicated to providing you the very best of electronics,
+						with an emphasis on customer care,
+						product market fit, custtomer satisfaction.
+					</AccordionDetails>
 
-				We hope you enjoy our products as much as we enjoy offering them to you.
-				If you have any questions or comments,
-				please don't hesitate to contact us.
+				</Accordion>
+
+				<Accordion>
+
+					<AccordionSummary expandIcon={<ExpandMore />}>
+						<h3>Foundation</h3>
+					</AccordionSummary>
+
+					<AccordionDetails>
+						Shoppaholix was founded in 2021 by Xessive Observer,
+						Shoppahlix has come a long way from its beginnings in e-comm era.
+						When Xessive Observer first started out,
+						his passion for Shoppaholix message - was always.
+					</AccordionDetails>
+
+				</Accordion>
+
+				<Accordion>
+
+					<AccordionSummary expandIcon={<ExpandMore />}>
+						<h3>Eco-friendly delvivery</h3>
+					</AccordionSummary>
+
+					<AccordionDetails>
+						This drove us to start their own business.
+						We hope you enjoy our products as much as we enjoy offering them to you.
+						If you have any questions or comments,
+						please don't hesitate to contact us.
+					</AccordionDetails>
+
+				</Accordion>
 			</AboutMessage>
 
 

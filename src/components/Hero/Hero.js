@@ -60,7 +60,7 @@ export const Hero = () => {
             <HeroText>
                 <HeroHeader>Shoppahloix</HeroHeader>
                 <HeroParagraph>Place Your Order Now</HeroParagraph>
-                <HeroButton><Shop sx={{padding: 1}}/> Shop Now</HeroButton>
+                <HeroButton><Shop /> Shop Now</HeroButton>
             </HeroText>
         </HeroImage>
     )
