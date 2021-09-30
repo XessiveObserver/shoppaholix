@@ -11,6 +11,7 @@ export const Nav = styled.nav`
 	justify-content: space-between;
 	align-items: center;
 	padding: 0.2rem calc((70vw - 800px) / 2);
+	margin: 0em;
 	z-index: 12;
 	/* Third Nav */
 	/* justify-content: flex-start; */

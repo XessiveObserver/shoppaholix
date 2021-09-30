@@ -3,7 +3,12 @@ import styled from 'styled-components';
 import Typewriter from "typewriter-effect";
 import AboutImg from './PageImages/desk-gadget.jpg'
 import { ExpandMore } from '@material-ui/icons';
-import { Accordion, AccordionSummary, AccordionDetails } from '@material-ui/core';
+import {
+	Accordion,
+	AccordionSummary,
+	AccordionDetails,
+} from '@material-ui/core';
+import { AboutBoxes } from '../AboutBoxes/AboutBoxes';
 
 
 const AboutWrapper = styled.div`
@@ -16,6 +21,12 @@ const AboutWrapper = styled.div`
 
 const Heading1 = styled.h1`
 	color: seagreen;
+	opacity: 0.7;
+`;
+const Heading3 = styled.h3`
+	color: green;
+	align-self: center;
+	opacity: 0.6;
 `;
 // 
 
@@ -23,27 +34,27 @@ const Heading1 = styled.h1`
 
 
 const AutoText = styled.div`
-	display: flex;
-	flex-direction: column;
-	font-size: 5em;
-	position: absolute;
-	padding: 10em;
-	text-align:center;
-	align-items: center;
+	text-align: center;
+    position: absolute;
+    top: 50%;
+	left:50%;
 	font-weight:bold;
 	font-size: 1.5em;
 	color:whitesmoke;
 	text-shadow: 1px 1px 2px black;
+	transform: translate(-50%, -50%);	
 	
 `;
 
 const Image = styled.div`
-	padding: 5em;
 	display: flex;
 	flex-direction: column;
-	background-image: url(${AboutImg});
+	background-image: linear-gradient( to top right,
+         rgba(11, 10, 10, 0.38),
+          rgba(11, 10, 10, 0.19)),
+	url(${AboutImg});
+	width:100%;
 	height: 70vh;
-	width: 100vw;
 	align-items: center;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -59,62 +70,45 @@ const AboutMessage = styled.div`
 	justify-content: center;
 	display: flex;
 	flex-direction: column;
+	margin: 5em;
+	padding: 0;
+
 `;
 
 
 export const About = () => {
 	return (
 		<AboutWrapper>
+
 			<Heading1>About Us Shoppaholix.</Heading1>
-			<Image />
-			<AutoText>
-
-				<Typewriter
-					options={{
-						strings: ['Welcome to Shoppahlix ...',
-							'Shoppaholix is your number one source for all electronics.'],
-						autoStart: true,
-						loop: true,
-					}}
-				/>
-
-			</AutoText>
+			<Image>
+				<AutoText>
+					<Typewriter
+						textStyle={{
+							display: 'flex',
+							flexDirection: 'column',
+						}}
+						options={{
+							strings: ['Welcome to Shoppahlix ...',
+								'Shoppaholix is your number one source for all electronics.'],
+							autoStart: true,
+							loop: true,
+							nextTextDelay: 1000,
+							typeSpeed: 30,
+						}}
+					/>
+				</AutoText>
+			</Image>
 
 			<AboutMessage>
-				<Accordion>
+				
+				<Accordion style={{
+					 display: 'flex',
+					  flexDirection: 'column',
+					 }}>
 
 					<AccordionSummary expandIcon={<ExpandMore />}>
-						<h3>Welcome to Shoppahlix</h3>
-					</AccordionSummary>
-
-					<AccordionDetails>
-						Your number one source for all things electronic.
-						We're dedicated to providing you the very best of electronics,
-						with an emphasis on customer care,
-						product market fit, custtomer satisfaction.
-					</AccordionDetails>
-
-				</Accordion>
-
-				<Accordion>
-
-					<AccordionSummary expandIcon={<ExpandMore />}>
-						<h3>Foundation</h3>
-					</AccordionSummary>
-
-					<AccordionDetails>
-						Shoppaholix was founded in 2021 by Xessive Observer,
-						Shoppahlix has come a long way from its beginnings in e-comm era.
-						When Xessive Observer first started out,
-						his passion for Shoppaholix message - was always.
-					</AccordionDetails>
-
-				</Accordion>
-
-				<Accordion>
-
-					<AccordionSummary expandIcon={<ExpandMore />}>
-						<h3>Eco-friendly delvivery</h3>
+						<Heading3>Eco-friendly delvivery</Heading3>
 					</AccordionSummary>
 
 					<AccordionDetails>
@@ -126,6 +120,7 @@ export const About = () => {
 
 				</Accordion>
 			</AboutMessage>
+			<AboutBoxes	/>
 
 
 		</AboutWrapper>

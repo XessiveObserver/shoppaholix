@@ -31,9 +31,8 @@ body{
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    max-width: 1000px;
     width: 100%;
 
     @media (max-width: 400px){
