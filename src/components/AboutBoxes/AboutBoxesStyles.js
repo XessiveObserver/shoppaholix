@@ -15,12 +15,18 @@ export const Container = styled.div`
 export const Box = styled.div`
   display: flex;
   border-radius: 0.8em;
+  border: 0.1em solid #eee7e0;
+  opacity:0.8;
   width: ${px2vw(320, 320)};
   min-height: ${px2vw(200, 320)};
   flex-direction: column;
   padding: ${px2vw(20)};
   margin: ${px2vw(20)};
-  background-color: ${props => props.bgColor};
+  cursor: pointer;
+  background-color: #f8f4f4;
+  &:hover{
+    background-color: ${props => props.bgColor};
+  }
   height: 100%;
   @media (min-width: 768px) {
     width: ${px2vw(320, 768)};
