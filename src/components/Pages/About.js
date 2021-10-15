@@ -89,7 +89,7 @@ export const About = () => {
 							flexDirection: 'column',
 						}}
 						options={{
-							strings: ['Welcome to Shoppahlix ...',
+							strings: ['Welcome to Shoppaholix ...',
 								'Shoppaholix is your number one source for all electronics.'],
 							autoStart: true,
 							loop: true,
