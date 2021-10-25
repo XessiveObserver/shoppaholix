@@ -1,70 +1,37 @@
-import React, {useState, useEffect} from 'react';
-import { IconContext } from "react-icons";
-import { BiMenu, BiX } from "react-icons/bi";
-
-import 
-{
+import React from 'react';
+import { Home, Info, Event } from '@material-ui/icons'
+import {
+    Bars,
     Nav,
-    NavbarContainer,
+    NavLink,
+    NavMenu,
     NavLogo,
-    MenuIcon,
-    Menu,
-    MenuItem,
-    MenuLink,
-    MenuItemBtn,
-    
+
 } from './NavBarStyles';
+
 export const NavBar = () => {
-    const [click, setClick] = useState(false);
-    const [button, setButton] = useState(true);
-    const handleClick = () => setClick(!click);
-    const closeMenu = () => setClick(false);
-
-    const showButton = () =>{
-        if(window.innerWidth<= 1000){
-            setButton(false);
-        }else{
-            setButton(true);
-        }
-    }
-
-    useEffect(() => {
-        showButton();
-    }, []);
-    window.addEventListener('resize', showButton);
-    
     return (
-        <div>
-            <IconContext.Provider value={{ color: '#fff'}}>
-                <Nav>
-                    <NavbarContainer>
-                        <NavLogo to="/">
-                            Shoppaholix
-                        </NavLogo>
-                        <MenuIcon onClick={handleClick}>
-                            {click ? <BiX/> : <BiMenu/>}
-                        </MenuIcon>
+        <>
+            <Nav>
+                <NavLogo to='/'>
+                    Shoppaholix
+                </NavLogo>
+                <Bars />
+                <NavMenu>
+                    <NavLink to='/' >
+                        <Home /> Home
+                    </NavLink>
+                    <NavLink to='/about' >
+                      <Info /> About
+                    </NavLink>
+                    <NavLink to='/events' >
+                    <Event />  Events
+                    </NavLink>
+                </NavMenu>
 
-                        <Menu onClick={handleClick} click={click}>
-                            <MenuItem>
-                                <MenuLink onClick={closeMenu} to="/">Home</MenuLink>
-                            </MenuItem>
-                            <MenuItem>
-                                <MenuLink onClick={closeMenu} to="/about">About</MenuLink>
-                            </MenuItem>
-                            <MenuItem>
-                                <MenuLink onClick={closeMenu} to="/events">Events</MenuLink>
-                            </MenuItem>
-                            <MenuItemBtn>
-                                {button
-                                }
-                            </MenuItemBtn>
-                        </Menu>
+            </Nav>
+        </>
+    );
+};
 
-                    </NavbarContainer>
 
-                </Nav>
-            </IconContext.Provider>
-        </div>
-    )
-}
