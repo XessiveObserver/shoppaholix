@@ -10,8 +10,8 @@ export const Nav = styled.nav`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0.2rem calc((70vw - 800px) / 2);
-	margin: 0em;
+	padding: 0.1rem calc((100vw - 900px) / 3);
+	margin: 0.1em;
 	z-index: 12;
 	/* Third Nav */
 	/* justify-content: flex-start; */
