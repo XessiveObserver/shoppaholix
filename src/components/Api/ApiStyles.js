@@ -33,12 +33,7 @@ export const StyledUnOrderedList = styled.ul`
             margin: 0.5em;
             border-radius: 0.8em;
             cursor: pointer;
-            &:hover{
-                background-color: #eee7e0;;
-                transition: all .5s ease;
-                transform: scale(1.06);
-            }
-            }
+        }
 
         li img {
             width: 200px;
