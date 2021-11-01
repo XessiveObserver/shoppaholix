@@ -40,7 +40,7 @@ export const StyledUnOrderedList = styled.ul`
             height: 200px;
             white-space: nowrap;
             border-radius: 0.8em;
-            border: #eee7e0 0.2em solid;
+            border: #eee7e0 0.1em solid;
         }
 
 `;

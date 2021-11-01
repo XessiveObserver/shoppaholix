@@ -19,10 +19,7 @@ const AboutWrapper = styled.div`
 
 `;
 
-const Heading1 = styled.h1`
-	color: seagreen;
-	opacity: 0.7;
-`;
+
 const Heading3 = styled.h3`
 	color: green;
 	align-self: center;
@@ -79,8 +76,6 @@ const AboutMessage = styled.div`
 export const About = () => {
 	return (
 		<AboutWrapper>
-
-			<Heading1>About Us Shoppaholix.</Heading1>
 			<Image>
 				<AutoText>
 					<Typewriter
