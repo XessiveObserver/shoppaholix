@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { FaBars } from "react-icons/fa";
 
 export const Nav = styled.nav`
-	position: relative sticky; top: 0;
+	position: sticky; top: 0;
 	background-color: #eee7e0;
 	opacity: 0.8;
 	height: 85px;
@@ -18,7 +18,7 @@ export const Nav = styled.nav`
 `;
 
 export const Bars = styled(FaBars)`
-  display: flex;
+  display: none;
   color: #fff;
   @media screen and (max-width: 768px) {
     display: block;

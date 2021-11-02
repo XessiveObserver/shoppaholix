@@ -16,15 +16,13 @@ function App() {
             <BrowserRouter>
                 <NavBar />
                 <Switch>
-                    <Route exact path="/" >
+                    <Route exact path="/" component={App} >
                         <Hero />
                         <Api />
                     </Route>
-                    <Route path="/about" >
-                        <About />
+                    <Route path="/about" component={About}  >    
                     </Route>
-                    <Route path="/events" >
-                        <Events />
+                    <Route path="/events" component={Events}  >
                     </Route>
                 </Switch>
                 <Footer />
