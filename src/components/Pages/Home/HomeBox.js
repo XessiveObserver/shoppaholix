@@ -14,7 +14,7 @@ const Image = styled.div`
          rgba(11, 10, 10, 0.38),
           rgba(11, 10, 10, 0.19)),
 	url(${LandImage});
-	width:100%;
+	width:50%;
 	height: 50vh;
 	align-items: center;
 	background-position: center;
@@ -27,11 +27,13 @@ const Image = styled.div`
 const ImageTitle = styled.h3`
     text-align: center;
     color: green;
+    margin: 0.3;
 `;
 
 const ImageText = styled.p`
     text-align: left;
     color: black;
+    margin: 1em;
 `;
 
 export const HomeBoxe = () => {
