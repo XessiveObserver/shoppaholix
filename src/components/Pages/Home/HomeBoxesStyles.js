@@ -21,11 +21,7 @@ export const Box = styled.div`
   flex-direction: column;
   padding: ${px2vw(20)};
   margin: ${px2vw(20)};
-  cursor: pointer;
   background-color: white;
-  &:hover{
-    background-color: ${props => props.bgColor};
-  }
   height: 100%;
   @media (min-width: 768px) {
     width: ${px2vw(320, 768)};

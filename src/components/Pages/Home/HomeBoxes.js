@@ -10,14 +10,14 @@ export const HomeBoxes = () => {
     return (
         <Container>
             
-            <Box bgColor='#bad6a0'>
+            <Box>
                 <BoxTitle>Eco-friendly delvivery</BoxTitle>
                 <BoxText>This drove us to start their own business.
                     We hope you enjoy our products as much as we enjoy offering them to you.
                     If you have any questions or comments,
                     please don't hesitate to contact us.</BoxText>
             </Box>
-            <Box bgColor='#769c7e'>
+            <Box>
                 <BoxTitle>Welcome to Shoppahlix</BoxTitle>
                 <BoxText>Your number one source for all things electronic.
                     We're dedicated to providing you the very best of electronics,

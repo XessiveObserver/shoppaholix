@@ -64,7 +64,7 @@ export const HomeBoxesMore = () => {
     return (
         <Container>
             
-            <Box bgColor='#e4dec0'>
+            <Box>
                 <BoxTitle>Eco-friendly delvivery</BoxTitle>
                 <BoxText>This drove us to start their own business.
                     We hope you enjoy our products as much as we enjoy offering them to you.
@@ -72,7 +72,7 @@ export const HomeBoxesMore = () => {
                     please don't hesitate to contact us.</BoxText>
                     <Image />
             </Box>
-            <Box bgColor='#dbc7a8'>
+            <Box>
                 <BoxTitle>Welcome to Shoppahlix</BoxTitle>
                 <BoxText>Your number one source for all things electronic.
                     We're dedicated to providing you the very best of electronics,
@@ -80,7 +80,7 @@ export const HomeBoxesMore = () => {
                     product market fit, custtomer satisfaction.</BoxText>
                     <Image2 />
             </Box>
-            <Box bgColor='#e9e795'>
+            <Box>
                 <BoxTitle>Welcome to Shoppahlix</BoxTitle>
                 <BoxText>Your number one source for all things electronic.
                     We're dedicated to providing you the very best of electronics,
