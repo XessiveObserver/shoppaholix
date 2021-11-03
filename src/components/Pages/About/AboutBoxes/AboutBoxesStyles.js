@@ -24,9 +24,7 @@ export const Box = styled.div`
   margin: ${px2vw(20)};
   cursor: pointer;
   background-color: #f8f4f4;
-  &:hover{
-    background-color: ${props => props.bgColor};
-  }
+  
   height: 100%;
   @media (min-width: 768px) {
     width: ${px2vw(320, 768)};

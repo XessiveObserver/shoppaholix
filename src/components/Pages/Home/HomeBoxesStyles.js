@@ -36,7 +36,7 @@ export const Box = styled.div`
 `;
 
 export const BoxTitle = styled.h3`
-  color: #333;
+  color: #09515c;
   font-size: 2em;
   text-align: center;
   @media (min-width: 1024px) {
@@ -46,7 +46,7 @@ export const BoxTitle = styled.h3`
 
 export const BoxText = styled.p`
   margin-top: ${px2vw(20)};
-  color: #666;
+  color: #311a09;
   font-size: 1.5em;
   @media (min-width: 1024px) {
     font-size: 1em;

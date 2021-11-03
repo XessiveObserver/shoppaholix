@@ -25,16 +25,19 @@ const HeroText = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #f0e2e2;
+    color: #978a8a;
 `;
 
 const HeroHeader = styled.h1`
     font-weight: bold;
+    color:seashell;
 `;
 
 const HeroParagraph = styled.p`
     font-size:1.5em;
     font-weight: 0.3em;
+    color: #eaeeea;
+;
 `;
 
 const HeroButton = styled(Link)`

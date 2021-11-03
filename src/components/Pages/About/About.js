@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Typewriter from "typewriter-effect";
-import AboutImg from '../PageImages/desk-gadget.jpg'
+import AboutImg from '../PageImages/about-img.jpg'
 import { ExpandMore } from '@material-ui/icons';
 import {
 	Accordion,
@@ -57,6 +57,9 @@ const Image = styled.div`
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
+	border-radius: 0.8em;
+	border: 0.3em solid grey;
+	opacity: 0.5;
 `;
 
 
