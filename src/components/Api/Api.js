@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { getList } from '../ApiFetch/ApiFetch';
 import { StyledWrapper, StyledUnOrderedList, AddCartButton } from './ApiStyles';
 import { AddShoppingCart } from '@material-ui/icons'
-import { connect } from 'react-redux';
+
 
 export const Api = () => {
 
@@ -42,8 +42,5 @@ export const Api = () => {
   )
 }
 
-const getStateForProps = (state) => ({
-  collections: state.product.productsCollection
-})
 
-export default connect(getStateForProps)(Api);
+

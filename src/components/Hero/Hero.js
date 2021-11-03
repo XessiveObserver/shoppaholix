@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImageSrc from './HeroImage/hero.jpg';
+import HeroImageSrc from './HeroImage/hero.png';
 import {Shop} from '@material-ui/icons'
+import {Link} from 'react-router-dom'
 
 const HeroImage = styled.div`
     display: felx;
@@ -36,11 +37,13 @@ const HeroParagraph = styled.p`
     font-weight: 0.3em;
 `;
 
-const HeroButton = styled.button`
+const HeroButton = styled(Link)`
     border: 0.18em solid;
     font-weight: bolder;
     cursor: pointer;
     color:black;
+    background-color:gray;
+    text-decoration: none;
     border-radius: 0.3em;
     font-size: 0.8em;
     padding: 0.5em;
@@ -60,7 +63,7 @@ export const Hero = () => {
             <HeroText>
                 <HeroHeader>Shoppahloix</HeroHeader>
                 <HeroParagraph>Place Your Order Now</HeroParagraph>
-                <HeroButton><Shop style={{verticalAlign:"middle"}}/> Shop Now</HeroButton>
+                <HeroButton Link to='/Shop' ><Shop style={{verticalAlign:"middle"}} /> Shop Now</HeroButton>
             </HeroText>
         </HeroImage>
     )

@@ -1,9 +1,12 @@
 import { GlobalStyles, Container } from './GlobalStyles';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { NavBar } from '../NavBar/NavBar';
-import { Api } from '../Api/Api';
-import { About } from '../Pages/About';
-import { Events } from '../Pages/Events';
+import { Shop } from '../Pages/Shop/Shop';
+import { About } from '../Pages/About/About';
+import { Events } from '../Pages/Events/Events';
+import { HomeBoxes } from '../Pages/Home/HomeBoxes';
+import { HomeBoxe } from '../Pages/Home/HomeBox';
+import { HomeBoxesMore } from '../Pages/Home/HomeBoxesMore';
 import { Hero } from '../Hero/Hero';
 import { Footer } from '../Footer/Footer';
 
@@ -16,13 +19,18 @@ function App() {
             <BrowserRouter>
                 <NavBar />
                 <Switch>
-                    <Route exact path="/" component={App} >
+                    <Route exact path="/" component={App}>
                         <Hero />
-                        <Api />
+                        <HomeBoxes />
+                        <HomeBoxe />
+                        <HomeBoxesMore />
                     </Route>
-                    <Route path="/about" component={About}  >    
+                    <Route path="/about" component={About}>    
                     </Route>
-                    <Route path="/events" component={Events}  >
+                    <Route path="/Shop" component={Shop}  >
+                        <Shop />   
+                    </Route>
+                    <Route path="/events" component={Events}>
                     </Route>
                 </Switch>
                 <Footer />
