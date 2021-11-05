@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImageSrc from './HeroImage/hero.png';
+import HeroImageSrc from './HeroImage/hero.jpg';
 import {Shop} from '@material-ui/icons'
 import {Link} from 'react-router-dom'
 

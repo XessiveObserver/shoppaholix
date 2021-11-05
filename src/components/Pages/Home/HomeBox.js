@@ -41,13 +41,13 @@ const ImageText = styled.p`
 const Box = styled.div`
   display: flex;
   border-radius: 0.8em;
-  opacity:0.8;
+  opacity:0.7;
   
   min-height: ${px2vw(200, 320)};
   flex-direction: column;
   padding: ${px2vw(20)};
   margin: ${px2vw(20)};
-  background-color: white;
+  background-color: lightcyan;
   height: 100%;
   @media (min-width: 768px) {
     width: ${px2vw(320, 768)};

@@ -105,7 +105,11 @@ export const About = () => {
 					  flexDirection: 'column',
 					 }}>
 
-					<AccordionSummary expandIcon={<ExpandMore />}>
+					<AccordionSummary 
+					expandIcon={<ExpandMore />}
+					style={{
+						alignItems: 'center',
+					}}>
 						<Heading3>Eco-friendly delvivery</Heading3>
 					</AccordionSummary>
 
