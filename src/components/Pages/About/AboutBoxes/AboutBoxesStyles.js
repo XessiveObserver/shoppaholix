@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import px2vw from "../../../Utils/px2vw";
+import utils from "../../../Utils/utils";
 
 export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: ${px2vw(32)};
+  margin: ${utils(32)};
   max-width: 100%;
   @media (min-width: 1024px) {
     flex-wrap: nowrap;
@@ -17,23 +17,23 @@ export const Box = styled.div`
   border-radius: 0.8em;
   border: 0.1em solid #eee7e0;
   opacity:0.8;
-  width: ${px2vw(320, 320)};
-  min-height: ${px2vw(200, 320)};
+  width: ${utils(320, 320)};
+  min-height: ${utils(200, 320)};
   flex-direction: column;
-  padding: ${px2vw(20)};
-  margin: ${px2vw(20)};
+  padding: ${utils(20)};
+  margin: ${utils(20)};
   cursor: pointer;
   background-color: #f8f4f4;
   
   height: 100%;
   @media (min-width: 768px) {
-    width: ${px2vw(320, 768)};
-    min-height: ${px2vw(200, 768)};
+    width: ${utils(320, 768)};
+    min-height: ${utils(200, 768)};
     height: 100%;
   }
   @media (min-width: 1024px) {
-    width: ${px2vw(500)};
-    min-height: ${px2vw(300)};
+    width: ${utils(500)};
+    min-height: ${utils(300)};
     height: 100%;
   }
 `;
@@ -48,7 +48,7 @@ export const BoxTitle = styled.h3`
 `;
 
 export const BoxText = styled.p`
-  margin-top: ${px2vw(20)};
+  margin-top: ${utils(20)};
   color: #666;
   font-size: 1.5em;
   @media (min-width: 1024px) {
