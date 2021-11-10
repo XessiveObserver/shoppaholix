@@ -1,5 +1,5 @@
 import React from 'react'
-import { Api } from '../../Api/Api';
+import { Products } from '../../Products/Products';
 import styled from 'styled-components';
 
 
@@ -12,7 +12,7 @@ const ShopWrapper = styled.div`
 export const Shop = () => {
     return (
         <ShopWrapper>
-            <Api />
+            <Products />
         </ShopWrapper>
     )
 }

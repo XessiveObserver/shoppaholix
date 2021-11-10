@@ -20,7 +20,6 @@ export const StyledUnOrderedList = styled.ul`
         flex-wrap: wrap;
         gap: 1.8em;
         text-align: center;
-        
         padding: 0.8em;
         margin: 0.8em;
         border-radius:0.85em;
@@ -42,13 +41,36 @@ export const StyledUnOrderedList = styled.ul`
             border-radius: 0.8em;
             border: #eee7e0 0.1em solid;
         }
+        div {
+            margin: 0.3em;
+        }
 
 `;
 
 
 export const AddCartButton = styled.button`
     opacity: 0.9;
-    background-color: #cfdaceba;
+    background-color: #0b2864b8;
+    font-weight: bolder;
+    cursor: pointer;
+    color:black;
+    margin-right: 1em;
+    border-radius: 0.3em;
+    border: 0.1em solid;
+    font-size: 0.8em;
+    padding: 0.5em;
+    margin: 0.5;
+    transition: all .5s ease;
+    &:hover{
+        transform: scale(1.06);
+        background-color: #7e7ed4;
+        color:black;
+        opacity: 0.7;
+    }
+`;
+export const RemoveCartButton = styled.button`
+    opacity: 0.9;
+    background-color: #530e17b9;
     font-weight: bolder;
     cursor: pointer;
     color:black;
@@ -60,9 +82,15 @@ export const AddCartButton = styled.button`
     transition: all .5s ease;
     &:hover{
         transform: scale(1.06);
-        background-color: #ccc77d;
+        background-color: #cf4d4d;
         color:black;
         opacity: 0.7;
     }
 `;
 
+// Shoping Cart
+
+export const CartTotal = styled.div`
+`;
+export const ShoppingCart = styled.div`
+`;
