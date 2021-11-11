@@ -44,10 +44,10 @@ const HeroButton = styled(Link)`
     border: 0.18em solid;
     font-weight: bolder;
     cursor: pointer;
-    color:black;
+    color:white;
     background-color:gray;
     text-decoration: none;
-    border-radius: 0.3em;
+    border-radius: 0.8em;
     font-size: 0.8em;
     padding: 0.5em;
     margin: 0.5em;
