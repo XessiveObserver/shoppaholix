@@ -4,7 +4,6 @@ import styled from 'styled-components';
 export const Nav = styled.nav`
 	position: sticky; top: 0;
 	background-color: #eee7e0;
-	opacity: 0.8;
 	height: 100px;
 	display: flex;
 	justify-content: space-between;
