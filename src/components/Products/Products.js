@@ -1,15 +1,15 @@
 import React, { useEffect, useState, useReducer } from 'react';
+import { RemoveCircleOutline, AddCircleOutline } from '@material-ui/icons'
 
 import { getList } from '../ApiFetch/ApiFetch';
 import {
   StyledWrapper,
   StyledUnOrderedList,
-  AddCartButton,
+  AddButton,
   ShoppingCart,
   CartTotal,
-  RemoveCartButton
+  RemoveButton
 } from './ProductsStyles';
-import { AddShoppingCart } from '@material-ui/icons'
 
 // rounding currency to 2 decimal values
 const currencyOptions = {
@@ -88,12 +88,15 @@ export const Products = () => {
           {list.map(product => <li key={product.id}><b>{product.name}</b>
             <li><b>${product.price}.</b></li>
             <li><img src={product.image} alt={product.name} /></li>
-            <div><AddCartButton onClick={() => addProduct(product)}> + Add
-              <AddShoppingCart />
-            </AddCartButton>
-              <RemoveCartButton onClick={() => removeProduct(product)}> - Remove
-                <AddShoppingCart />
-              </RemoveCartButton></div>
+            <div>
+              <AddButton>
+                <AddCircleOutline style={{fontSize: 30}}  onClick={() => addProduct(product)} />
+              </AddButton>
+              <RemoveButton>
+                <RemoveCircleOutline style={{fontSize: 30}}  onClick={() => removeProduct(product)} />
+              </RemoveButton>
+              
+              </div>
           </li>
           )}
         </StyledUnOrderedList>

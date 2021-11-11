@@ -1,7 +1,6 @@
 import React from 'react';
 import { Home, Info, Event, AddShoppingCart } from '@material-ui/icons'
 import {
-    Bars,
     Nav,
     NavLink,
     NavMenu,
@@ -16,7 +15,6 @@ export const NavBar = () => {
                 <NavLogo to='/'>
                     Shoppaholix
                 </NavLogo>
-                <Bars />
                 <NavMenu>
                     <NavLink to='/' >
                         <Home /> Home
@@ -25,10 +23,12 @@ export const NavBar = () => {
                       <Info /> About
                     </NavLink>
                     <NavLink to='/events' >
-                    <Event />  Events
+                    <Event />  Blog
                     </NavLink>
                     <NavLink to='/' >
-                    <AddShoppingCart />
+                    <AddShoppingCart 
+                        style = {{fontSize: 28}}
+                    />
                     </NavLink>
                 </NavMenu>
 

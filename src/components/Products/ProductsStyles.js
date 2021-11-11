@@ -48,13 +48,13 @@ export const StyledUnOrderedList = styled.ul`
 `;
 
 
-export const AddCartButton = styled.button`
+export const AddButton = styled.button`
     opacity: 0.9;
-    background-color: #0b2864b8;
+    background-color: seagreen;
     font-weight: bolder;
     cursor: pointer;
     color:black;
-    margin-right: 1em;
+    margin-right: 3em;
     border-radius: 0.3em;
     border: 0.1em solid;
     font-size: 0.8em;
@@ -63,14 +63,14 @@ export const AddCartButton = styled.button`
     transition: all .5s ease;
     &:hover{
         transform: scale(1.06);
-        background-color: #7e7ed4;
+        background-color: darkgreen;
         color:black;
         opacity: 0.7;
     }
 `;
-export const RemoveCartButton = styled.button`
+export const RemoveButton = styled.button`
     opacity: 0.9;
-    background-color: #530e17b9;
+    background-color: #833434;
     font-weight: bolder;
     cursor: pointer;
     color:black;
