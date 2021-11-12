@@ -4,7 +4,11 @@ import { NavBar } from '../NavBar/NavBar';
 import { Shop } from '../Pages/Shop/Shop';
 import { About } from '../Pages/About/About';
 import { Events } from '../Pages/Events/Events';
-import { HomeBoxesMore } from '../Pages/Home/HomeBoxesMore';
+import { Procedure } from '../Pages/Home/Procedure/Procedure';
+import { HowItWorks } from '../Pages/Home/Procedure/HowItWorks';
+import { WhatWeDo } from '../Pages/Home/WhatWeDo/WhatWeDo';
+import { Clients } from '../Pages/Home/Clients/Clients';
+import { ClientReviewHeader } from '../Pages/Home/Clients/ClientReviewHeader';
 import { Hero } from '../Hero/Hero';
 import { Footer } from '../Footer/Footer';
 
@@ -19,7 +23,11 @@ function App() {
                 <Switch>
                     <Route exact path="/" component={App}>
                         <Hero />
-                        <HomeBoxesMore />
+                        <WhatWeDo />
+                        <ClientReviewHeader />
+                        <Clients />                       
+                        <HowItWorks />                       
+                        <Procedure />                        
                     </Route>
                     <Route path="/about" component={About}>    
                     </Route>

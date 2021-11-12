@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import utils from "../../Utils/utils";
+import utils from "../../../Utils/utils";
 
 export const Container = styled.div`
   display: flex;
@@ -15,13 +15,13 @@ export const Container = styled.div`
 export const Box = styled.div`
   display: flex;
   border-radius: 0.8em;
+  border: 0.1em solid #f1eeee;
   opacity:0.8;
   width: ${utils(320, 320)};
   min-height: ${utils(200, 320)};
   flex-direction: column;
   padding: ${utils(20)};
   margin: ${utils(20)};
-  background-color: #f0efef;
   height: 100%;
   @media (min-width: 768px) {
     width: ${utils(320, 768)};
@@ -40,7 +40,7 @@ export const BoxTitle = styled.h3`
   font-size: 2em;
   text-align: center;
   @media (min-width: 1024px) {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 `;
 
@@ -49,6 +49,6 @@ export const BoxText = styled.p`
   color: #311a09;
   font-size: 1.5em;
   @media (min-width: 1024px) {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 `;

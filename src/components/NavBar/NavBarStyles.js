@@ -42,9 +42,8 @@ export const NavLink = styled(Link)`
 	grid-gap: 0.2em;
 	align-items: center;
 	text-decoration: none;
-	margin-right: 1em;
-	padding: 0 1rem;
-	height: 100%;
+	margin-right: 0.1em;
+	padding: 0 0.3rem;
 	cursor: pointer;
 	font-weight: bolder;
 	transition: all .5s ease;
