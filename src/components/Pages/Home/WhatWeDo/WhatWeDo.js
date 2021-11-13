@@ -16,7 +16,7 @@ export const WhatWeDo = () => {
                     <WhatWeDoImage />
             </WhatWeDoBox>
             <WhatWeDoBox>
-                <WhatWeDoTitle>Shoppahlix Mystic</WhatWeDoTitle>
+                <WhatWeDoTitle>Shoppaholix Mystic</WhatWeDoTitle>
                 <WhatWeDoText>Your number one source for all things electronic.
                     We're dedicated to providing you the very best of electronics,
                     with an emphasis on customer care,
