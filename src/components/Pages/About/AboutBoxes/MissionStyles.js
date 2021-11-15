@@ -1,4 +1,4 @@
-import ShopNowIMage from '../../PageImages/mission.jpg'
+import Mission_Image from '../../PageImages/mission.jpg'
 import utils from "../../../Utils/utils";
 import styled from "styled-components";
 
@@ -8,7 +8,7 @@ export const MissionImage = styled.div`
 	flex-direction: column;
 ;
 	background-image:
-	url(${ShopNowIMage});
+	url(${Mission_Image});
 	width:100%;
 	height: 50vh;
 	align-items: center;
