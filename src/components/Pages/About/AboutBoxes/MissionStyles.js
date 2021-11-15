@@ -1,5 +1,23 @@
-import styled from "styled-components";
+import ShopNowIMage from '../../PageImages/mission.jpg'
 import utils from "../../../Utils/utils";
+import styled from "styled-components";
+
+
+export const MissionImage = styled.div`
+	display: flex;
+	flex-direction: column;
+;
+	background-image:
+	url(${ShopNowIMage});
+	width:100%;
+	height: 50vh;
+	align-items: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+  border-radius: 0.8em;
+`;
 
 export const Container = styled.div`
   display: flex;
@@ -12,16 +30,15 @@ export const Container = styled.div`
   }
 `;
 
-export const Box = styled.div`
+export const MissionBox = styled.div`
   display: flex;
   border-radius: 0.8em;
-  border: 0.1rem solid #e8f3df;
   opacity:0.8;
   width: ${utils(320, 320)};
   min-height: ${utils(200, 320)};
   flex-direction: column;
   padding: ${utils(20)};
-  margin: ${utils(20)};  
+  margin: ${utils(20)};
   height: 100%;
   @media (min-width: 768px) {
     width: ${utils(320, 768)};
@@ -35,8 +52,8 @@ export const Box = styled.div`
   }
 `;
 
-export const BoxTitle = styled.h3`
-  color: green;
+export const MissionTitle = styled.h3`
+  color: #09515c;
   font-size: 2em;
   text-align: center;
   @media (min-width: 1024px) {
@@ -44,11 +61,12 @@ export const BoxTitle = styled.h3`
   }
 `;
 
-export const BoxText = styled.p`
+export const MissionText = styled.p`
   margin-top: ${utils(20)};
-  color: #032503;
+  color: #311a09;
   font-size: 1.5em;
   @media (min-width: 1024px) {
     font-size: 1em;
   }
 `;
+
