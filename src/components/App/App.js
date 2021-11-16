@@ -26,23 +26,23 @@ function App() {
                         <Hero />
                         <WhatWeDo />
                         <ClientReviewHeader />
-                        <Clients />                       
-                        <HowItWorks />                       
-                        <Procedure />                        
+                        <Clients />
+                        <HowItWorks />
+                        <Procedure />
                     </Route>
                     <Route path="/about" component={About}>
-                    <AboutHero />
-                    <About />    
+                        <AboutHero />
+                        <About />
                     </Route>
                     <Route path="/Shop" component={Shop}  >
-                        <Shop />   
+                        <Shop />
                     </Route>
                     <Route path="/events" component={Events}>
                     </Route>
                 </Switch>
                 <Footer />
             </BrowserRouter>
-            
+
         </Container>
 
 
