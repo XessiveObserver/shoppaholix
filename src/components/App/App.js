@@ -11,6 +11,7 @@ import { Clients } from '../Pages/Home/Clients/Clients';
 import { ClientReviewHeader } from '../Pages/Home/Clients/ClientReviewHeader';
 import { Hero } from '../Hero/Hero';
 import { Footer } from '../Footer/Footer';
+import { AboutHero } from '../Pages/About/AboutHero';
 
 function App() {
 
@@ -29,7 +30,9 @@ function App() {
                         <HowItWorks />                       
                         <Procedure />                        
                     </Route>
-                    <Route path="/about" component={About}>    
+                    <Route path="/about" component={About}>
+                    <AboutHero />
+                    <About />    
                     </Route>
                     <Route path="/Shop" component={Shop}  >
                         <Shop />   

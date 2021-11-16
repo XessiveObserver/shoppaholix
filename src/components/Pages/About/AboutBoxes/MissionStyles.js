@@ -6,7 +6,6 @@ import styled from "styled-components";
 export const MissionImage = styled.div`
 	display: flex;
 	flex-direction: column;
-;
 	background-image:
 	url(${Mission_Image});
 	width:100%;
@@ -17,6 +16,7 @@ export const MissionImage = styled.div`
 	background-size: cover;
 	position: relative;
   border-radius: 0.8em;
+  border: 0.1em solid #e8f3df;
 `;
 
 export const Container = styled.div`
