@@ -13,7 +13,7 @@ const H1 = styled.h1`
 	color: seagreen;
 `;
 
-export const Events = () => {
+export const Blog = () => {
 	
 return (
 	<EventsWrapper>

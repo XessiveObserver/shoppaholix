@@ -22,7 +22,7 @@ export const Footer = () => {
                 <FooterContainer>
                     <FooterNewsletter>
                         <FooterNewsletterTitle>Join our listing for execlusive discounts and new gadgets</FooterNewsletterTitle>
-                        <FooterNewsletterText>We create new recipes every week and cooking tips</FooterNewsletterText>
+                        <FooterNewsletterText>We have new give aways every month</FooterNewsletterText>
                         <FooterNewsletterForm>
                             <FooterLabel htmlFor="email">Email address</FooterLabel>
                            <FooterNewsletterInput name="email" id="email" type="email" placeholder="Email address" />

@@ -7,6 +7,7 @@ import {
     NavLogo,
 
 } from './NavBarStyles';
+import {Shop} from '@material-ui/icons'
 
 export const NavBar = () => {
     return (
@@ -19,16 +20,20 @@ export const NavBar = () => {
                     <NavLink to='/' >
                         <Home /> Home
                     </NavLink>
+                    <NavLink to='/shop' >
+                      <Shop /> Shop
+                    </NavLink>
                     <NavLink to='/about' >
                       <Info /> About
                     </NavLink>
-                    <NavLink to='/events' >
+                    <NavLink to='/blog' >
                     <Event />  Blog
                     </NavLink>
-                    <NavLink to='/' >
-                    <AddShoppingCart 
+                    <NavLink to='/cart' >
+                    <AddShoppingCart to=''
                         style = {{fontSize: 28}}
-                    />
+                    >
+                    </AddShoppingCart>
                     </NavLink>
                 </NavMenu>
 

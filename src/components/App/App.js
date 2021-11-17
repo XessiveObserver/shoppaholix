@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { NavBar } from '../NavBar/NavBar';
 import { Shop } from '../Pages/Shop/Shop';
 import { About } from '../Pages/About/About';
-import { Events } from '../Pages/Events/Events';
+import { Blog } from '../Pages/Blog/Blog';
 import { Procedure } from '../Pages/Home/Procedure/Procedure';
 import { HowItWorks } from '../Pages/Home/Procedure/HowItWorks';
 import { WhatWeDo } from '../Pages/Home/WhatWeDo/WhatWeDo';
@@ -34,10 +34,10 @@ function App() {
                         <AboutHero />
                         <About />
                     </Route>
+                    <Route path="/Blog" component={Blog}>
+                    </Route>
                     <Route path="/Shop" component={Shop}  >
                         <Shop />
-                    </Route>
-                    <Route path="/events" component={Events}>
                     </Route>
                 </Switch>
                 <Footer />
