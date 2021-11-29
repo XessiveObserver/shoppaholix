@@ -28,7 +28,7 @@ ${Container};
 export const NavLogo = styled(Link)`
 margin: 3em;
 display:flex;
-color: black;
+color: seagreen;
 cursor: pointer;
 display: flex;
 align-items: left;

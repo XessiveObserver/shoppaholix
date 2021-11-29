@@ -40,8 +40,8 @@ export const NavBar = () => {
             <IconContext.Provider value={{ color: '#fff'}}>
                 <Nav>
                     <NavbarContainer>
-                        <NavLogo to="/">
-                            <NavIcon/>
+                        <NavLogo style={{verticalAlign:'middle'}} to="/">
+                            <NavIcon style={{verticalAlign:'middle', color: 'green', size: 25}}/>
                             Shoppaholix
                         </NavLogo>
                         <MenuIcon onClick={handleClick}>
@@ -65,7 +65,8 @@ export const NavBar = () => {
                                 {button?(
                                     <MenuLinkBtn to="/shop">
                                         <Button primary>
-                                         <ShopOutlined style={{fontSize: 22, verticalAlign: 'middle'}} / >Order Now</Button>
+                                         <ShopOutlined style={{fontSize: 22, verticalAlign: 'middle'}} / >
+                                         Order Now</Button>
                                     </MenuLinkBtn>
                                 ): (
                                     <MenuLinkBtn to="/shop">
