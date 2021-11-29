@@ -45,7 +45,7 @@ const HeroButton = styled(Link)`
     font-weight: bolder;
     cursor: pointer;
     color:white;
-    background-color:gray;
+    background-color:green;
     text-decoration: none;
     border-radius: 0.8em;
     font-size: 0.8em;
@@ -53,7 +53,7 @@ const HeroButton = styled(Link)`
     margin: 0.5em;
     transition: all .5s ease;
     &:hover{
-        background-color: #eaeeea;
+        background-color: white;
         color:darkgreen;
         opacity: 0.7;
         transform:scale(1.08);

@@ -34,9 +34,9 @@ function App() {
                         <AboutHero />
                         <About />
                     </Route>
-                    <Route path="/Blog" component={Blog}>
+                    <Route path="/blog" component={Blog}>
                     </Route>
-                    <Route path="/Shop" component={Shop}  >
+                    <Route path="/shop" component={Shop}  >
                         <Shop />
                     </Route>
                 </Switch>
