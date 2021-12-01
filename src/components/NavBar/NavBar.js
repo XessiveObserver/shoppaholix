@@ -40,7 +40,7 @@ export const NavBar = () => {
             <IconContext.Provider value={{ color: '#fff'}}>
                 <Nav>
                     <NavbarContainer>
-                        <NavLogo style={{verticalAlign:'middle'}} to="/">
+                        <NavLogo to="/">
                             <NavIcon style={{verticalAlign:'middle', color: 'green', size: 25}}/>
                             Shoppaholix
                         </NavLogo>

@@ -42,6 +42,7 @@ transition: all .5s ease;
 `;
 
 export const NavIcon = styled(BiShoppingBag)`
+font-size: 1.5em;
 margin-right: 0.8rem;
 transition: all .5s ease;
 &:hover {
@@ -103,7 +104,7 @@ height: 100%;
 transition: all .2s ease;
 &:hover {
     color: green;
-    transform: traslateY(-3rem);
+    transform: scale(1.2)
     
 }
 &:active {
