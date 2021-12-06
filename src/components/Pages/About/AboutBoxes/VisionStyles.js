@@ -7,7 +7,7 @@ export const VisionImage = styled.div`
 	display: flex;
 	flex-direction: column;
   border-radius: 0.8em;
-  border: 0.1em solid #e8f3df;
+  border: 0.2em solid #e8f3df;
 	background-image:
 	url(${Mission_Image});
 	width:100%;

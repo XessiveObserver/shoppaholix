@@ -15,7 +15,7 @@ export const Container = styled.div`
 export const Box = styled.div`
   display: flex;
   border-radius: 0.8em;
-  border: 0.1em solid #f1eeee;
+  border: 0.2em solid #f1eeee;
   opacity:0.8;
   width: ${utils(320, 320)};
   min-height: ${utils(200, 320)};

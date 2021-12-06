@@ -62,7 +62,6 @@ export const Products = () => {
   }
 
 
-// used to get data from the api fetch method 
   useEffect(() => {
     let mounted = true;
     getList()

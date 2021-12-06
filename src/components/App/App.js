@@ -3,7 +3,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { NavBar } from '../NavBar/NavBar';
 import { Shop } from '../Pages/Shop/Shop';
 import { About } from '../Pages/About/About';
-import { Blog } from '../Pages/Blog/Blog';
 import { Procedure } from '../Pages/Home/Procedure/Procedure';
 import { HowItWorks } from '../Pages/Home/Procedure/HowItWorks';
 import { WhatWeDo } from '../Pages/Home/WhatWeDo/WhatWeDo';
@@ -34,9 +33,7 @@ function App() {
                         <AboutHero />
                         <About />
                     </Route>
-                    <Route path="/blog" component={Blog}>
-                    </Route>
-                    <Route path="/shop" component={Shop}  >
+                    <Route path="/Shop" component={Shop}  >
                         <Shop />
                     </Route>
                 </Switch>

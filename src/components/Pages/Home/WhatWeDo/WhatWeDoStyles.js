@@ -1,7 +1,7 @@
 import ShopNowIMage from '../../PageImages/shop.jpg'
 import utils from "../../../Utils/utils";
 import styled from "styled-components";
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 export const WhatWeDoImage = styled.div`

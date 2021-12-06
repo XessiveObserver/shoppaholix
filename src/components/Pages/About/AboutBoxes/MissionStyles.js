@@ -16,7 +16,7 @@ export const MissionImage = styled.div`
 	background-size: cover;
 	position: relative;
   border-radius: 0.8em;
-  border: 0.1em solid #e8f3df;
+  border: 0.2em solid #e8f3df;
 `;
 
 export const Container = styled.div`
